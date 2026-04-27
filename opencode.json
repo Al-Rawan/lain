@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config",
+  "mcp": {
+    "github": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-github"]
+    },
+    "filesystem": {
+      "type": "local", 
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "./"]
+    },
+    "opencode-mcp": {
+      "type": "local",
+      "command": ["npx", "-y", "opencode-mcp"]
+    },
+    "opencode-toolbox": {
+      "type": "local",
+      "command": ["npx", "-y", "opencode-toolbox"]
+    }
+  },
+  "plugin": ["oh-my-opencode", "opencode-lazy-loader"]
+}
